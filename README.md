@@ -1,73 +1,74 @@
-💍 Wedding Date Predictor 2026
+# 💍 Wedding Date Predictor 2026
+
 A fun, mystical, and interactive web application designed to predict wedding dates for friends and family using a "magic" algorithm. This project is optimized for high user engagement, data collection via Google Forms, and is "AdSense Ready" with strategic ad placement containers.
 
-🚀 Key Features
-1. Mystical Prediction Engine
-Interactive UI: Features a floating, sparkling crystal ball animation created with pure CSS.
+---
 
-Personalized Results: Users enter a friend's name to generate a specific wedding date and a unique "fortune" message.
+## 🚀 Key Features
 
-Animated Results: The prediction is displayed with a pulse-animation effect to enhance the "magical" feel.
+### 1. Mystical Prediction Engine
+- **Interactive UI:** Features a floating, sparkling crystal ball animation created with pure CSS.
+- **Personalized Results:** Users enter a friend's name to generate a specific wedding date and a unique "fortune" message.
+- **Animated Results:** The prediction is displayed with a pulse-animation effect to enhance the "magical" feel.
 
-2. Smart Data Collection (Google Forms Integration)
-Silent Submission: The app automatically logs every prediction (Friend's Name, Predicted Date, and Fortune) to a Google Sheet via a hidden iframe.
+### 2. Smart Data Collection (Google Forms Integration)
+- **Silent Submission:** The app automatically logs every prediction (Friend's Name, Predicted Date, and Fortune) to a Google Sheet via a hidden iframe.
+- **Lead Generation:** Includes a "Custom Website" offer that directs users to a contact form, allowing you to convert fun traffic into potential clients for custom web development.
 
-Lead Generation: Includes a "Custom Website" offer that directs users to a contact form, allowing you to convert fun traffic into potential clients for custom web development.
-
-3. "Clever" AdSense Integration
+### 3. "Clever" AdSense Integration
 The repository uses a hybrid approach for Google AdSense to maximize revenue without ruining user experience:
 
-Strategic Containers: Pre-defined ad-container and ad-space divs are placed at the Top, Middle (after results), and Bottom of the page.
+- **Strategic Containers:** Pre-defined `ad-container` and `ad-space` divs are placed at the Top, Middle (after results), and Bottom of the page.
+- **Auto-Ad Optimization:** These containers use `min-height` and transparent backgrounds. This acts as a "hint" to Google's Auto-Ads AI to place advertisements in these specific spots rather than over-lapping buttons or text.
+- **Professional Look:** Until ads are approved, these spaces remain invisible to the user, keeping the site clean.
 
-Auto-Ad Optimization: These containers use min-height and transparent backgrounds. This acts as a "hint" to Google's Auto-Ads AI to place advertisements in these specific spots rather than over-lapping buttons or text.
+### 4. Essential Compliance Pages
+- **About Page:** Describes the "mystical" nature of the tool and establishes the fun tone of the site.
+- **Privacy Policy:** Includes the mandatory "Cookie" and "Data Usage" clauses required by Google AdSense for site approval.
+- **Contact Form:** A fully functional contact page that maps directly to your Google Sheets for inquiry management.
 
-Professional Look: Until ads are approved, these spaces remain invisible to the user, keeping the site clean.
+---
 
-4. Essential Compliance Pages
-About Page: Describes the "mystical" nature of the tool and establishes the fun tone of the site.
+## 📁 Project Structure
 
-Privacy Policy: Includes the mandatory "Cookie" and "Data Usage" clauses required by Google AdSense for site approval.
+```
+├── index.html          # The main "Predictor" application and landing page
+├── about.html          # Information about the project and its entertainment purpose
+├── contact.html        # Inquiry form for custom website requests
+├── privacy-policy.html # Legal disclosures for AdSense compliance
+├── style.css           # Modern, mobile-responsive styles with purple/pink gradients
+└── script.js           # Contains the prediction logic, sharing functionality, and Google Form submission triggers
+```
 
-Contact Form: A fully functional contact page that maps directly to your Google Sheets for inquiry management.
+---
 
-📁 Project Structure
-index.html: The main "Predictor" application and landing page.
+## 🛠️ Setup & Customization
 
-about.html: Information about the project and its entertainment purpose.
-
-contact.html: Inquiry form for custom website requests.
-
-privacy-policy.html: Legal disclosures for AdSense compliance.
-
-style.css: Modern, mobile-responsive styles with purple/pink gradients.
-
-script.js: Contains the prediction logic, sharing functionality, and Google Form submission triggers.
-
-🛠️ Setup & Customization
-Google Forms Setup
+### Google Forms Setup
 To make the forms work with your own Google Sheet:
 
-Create a Google Form with fields for Name, Prediction, and Date.
+1. Create a Google Form with fields for **Name**, **Prediction**, and **Date**.
+2. Get the **"Pre-filled link"** to find the `entry.ID` numbers.
+3. Replace the `action` URL and the `name="entry.xxxx"` attributes in the `index.html` and `contact.html` form sections.
 
-Get the "Pre-filled link" to find the entry.ID numbers.
+### AdSense Setup
+1. Once you receive your AdSense code, paste the `<script>` tag into the `<head>` of all HTML files.
+2. Enable **Auto Ads** in your AdSense dashboard.
+3. The AI will automatically utilize the `.ad-space` containers already styled in `style.css`.
 
-Replace the action URL and the name="entry.xxxx" attributes in the index.html and contact.html form sections.
+---
 
-AdSense Setup
-Once you receive your AdSense code, paste the <script> tag into the <head> of all HTML files.
-
-Enable Auto Ads in your AdSense dashboard.
-
-The AI will automatically utilize the .ad-space containers already styled in style.css.
-
-📱 Responsive Design
+## 📱 Responsive Design
 The project is fully responsive and optimized for:
 
-Desktop: Large crystal ball and side-by-side footer sections.
+- **Desktop:** Large crystal ball and side-by-side footer sections.
+- **Mobile:** Stacked inputs, simplified navigation menu, and touch-friendly buttons.
 
-Mobile: Stacked inputs, simplified navigation menu, and touch-friendly buttons.
+---
 
-⚖️ Disclaimer
+## ⚖️ Disclaimer
 This website is for entertainment purposes only. The "predictions" are generated by a randomizing algorithm and are not based on actual future events.
 
-Developed by: Ubaid Ahmad
+---
+
+**Developed by:** Ubaid Ahmad
